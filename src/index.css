@@ -1,13 +1,92 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.addTodo {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.addInput {
+  height: 40px;
+  width: 320px;
+  border: 1px solid rgb(10, 10, 61);
+  border-radius: 8px;
+  color: rgb(10, 10, 61);
+}
+
+.addButton {
+  margin-left: 4px;
+  background-color: rgb(10, 10, 61);
+  border: none;
+  height: 40px;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: white;
+}
+
+.addButton:hover {
+  background-color: white;
+  border: 1px solid rgb(10, 10, 61);
+  color: rgb(10, 10, 61);
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.todoContainer {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 4px;
+  border: 1px solid rgb(10, 10, 61);
+}
+
+.editContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-left: 4px;
+}
+
+.inputEdit {
+  height: 20px;
+  width: 70%;
+  border-radius: 8px;
+  border: 1px solid rgb(10, 10, 61);
+}
+
+.buttonEdit {
+  height: 20px;
+  width: 30px;
+  border-radius: 8px;
+  margin-left: 4px;
+  border: none;
+  color: white;
+  background-color: rgb(10, 10, 61);
 }
